@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Maherimtiyaz
 - 👀 I’m interested in CODE FOR SAFETY.
-- 🌱 I’m currently learning PYTHON AND AI.
+- 🌱 I’m currently doing PYTHON BCAKEND AND AI.
 - 💞️ I’m looking to collaborate on MAKING SOFTWARE RELETED TO AI AND CYBERSECURITY.
 - 📫 How to reach me maherimtiyaz7@gmail>com
 - 😄 Pronouns: SHE
