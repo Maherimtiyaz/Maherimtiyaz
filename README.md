@@ -55,7 +55,7 @@ Vivekananda Global University, Jaipur *(2025 – 2028)*
 ## 📫 Contact
 - Email: **mahekimtiyaz7@gmail.com**  
 - GitHub: https://github.com/Maherimtiyaz  
-- LinkedIn: https://linkedin.com/in/mahek-imtiyaz  
+- LinkedIn: https://linkedin.com/in/mahek-fatima  
 
 ---
 
