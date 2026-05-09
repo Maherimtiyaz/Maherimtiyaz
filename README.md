@@ -1,23 +1,39 @@
-## Header:
-Backend Engineer · Python · FastAPI · PostgreSQL
+Hi, I'm Mahek Fatima 👋
+Backend Engineer — I build scalable APIs, real-time systems, and secure authentication services using Python, FastAPI, and PostgreSQL.
+Currently expanding into Node.js, contributing to open source in the FastAPI/Python ecosystem, and building in public.
 
-## What I build:
-3 bullet points — each one a concrete claim tied to a project.
-e.g. "Real-time messaging systems with WebSocket concurrency (Chat Backend)"
-     "Secure JWT authentication services with RBAC (Auth Service)"
-     "Multi-tenant REST APIs with PostgreSQL optimization (TaskOps)"
+🔧 What I Build
+AreaStackREST APIs & Real-TimeFastAPI · WebSockets · JWT · RBACDatabasesPostgreSQL · MongoDB · SQLAlchemy · Query OptimizationInfrastructureDocker · GitHub Actions · Linux · pytestLearningNode.js · Express.js · System Design
 
-## Tech:
-Compact skill table. No "basic" qualifiers. Remove anything you can't back up.
-Languages: Python · SQL · JavaScript
-Backend: FastAPI · Express.js · REST · WebSockets · JWT
-DB: PostgreSQL · MongoDB · SQLAlchemy
-Tools: Docker · Git · Linux · Postman · pytest
+🚀 Featured Projects
+TaskOps — Multi-Tenant Task Management API
+Python FastAPI PostgreSQL JWT Docker GitHub Actions
+Multi-tenant REST API with isolated org data, role-based access control, and JWT authentication. Normalized PostgreSQL schemas with indexed foreign keys and Alembic migrations. CI/CD via GitHub Actions with automated pytest runs on every push.
 
-## Currently:
-- Building TaskOps (multi-tenant task management API)
-- Contributing to open source (link your OSS work)
-- Open to backend engineering internships (remote)
+Real-Time Chat Backend
+Python FastAPI WebSockets PostgreSQL Docker
+Async WebSocket messaging backend supporting multi-room concurrent connections with JWT-authenticated handshakes. Optimized PostgreSQL schema replacing sequential scans on message retrieval. Fully containerized with Docker.
 
-## Stats badge:
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Maherimtiyaz)
+Authentication & Authorization Service
+Python FastAPI JWT bcrypt PostgreSQL pytest
+Stateless JWT auth service with bcrypt password hashing and role-based access control — designed as a pluggable module for microservice architectures. OWASP-aligned input validation and full pytest + Postman coverage.
+
+Appointment Scheduling API
+Node.js Express.js MongoDB
+Role-based REST API for appointment management with conflict-detection scheduling logic at the database layer. Shows cross-stack backend breadth (Node.js/Express alongside Python/FastAPI work).
+
+AI Chatbot Backend API
+Python FastAPI REST APIs
+Backend API layer for an AI-powered chatbot — handling prompt routing, response streaming, and session management. Exploring the intersection of backend infrastructure and LLM-powered applications.
+
+🌱 Open Source Contributions
+I'm actively contributing to the Python and FastAPI ecosystem. Every PR I submit — merged or not — is documented here with what I learned from it.
+→ View my OSS contributions log
+
+📍 Currently
+
+🔨 Building TaskOps to production-ready state
+🌱 Contributing to open source (FastAPI, Starlette, Python tooling)
+📖 Deepening knowledge in system design and distributed backend architecture
+🔍 Open to remote backend engineering internships
+
