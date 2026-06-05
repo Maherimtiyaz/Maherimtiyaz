@@ -50,7 +50,7 @@ I'm actively contributing to the Python and FastAPI ecosystem. Every PR I submit
 Email: mahekitmiyaz7@gmail.com
 LinkedIn: https://www.linkedin.com/in/mahek-fatima
 Twitter: https://x.com/itzmaherimtiyaz
-Portfolio: https://maherimtiyaz.github.io/Portfolio/
+Website: https://mahekportfoliov2.vercel.app/
 
 ### Sometimes I write what I learn and what I feel.
 Medium: https://medium.com/@mahimaher343
