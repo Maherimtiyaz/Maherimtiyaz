@@ -115,3 +115,49 @@ Role-based REST API with conflict-detection scheduling logic at the database lay
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 </div>
+
+
+---
+
+## 📊 activity
+
+<div align="center">
+
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=Maherimtiyaz&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&hide=contribs" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Maherimtiyaz&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
+
+</div>
+
+<div align="center">
+
+![Streak](https://streak-stats.demolab.com?user=Maherimtiyaz&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+## 🌱 right now
+
+- 🔨 Building **TaskOps** — adding Redis caching layer
+- 🤖 Learning **voice AI** — STT/TTS pipelines, LLM function calling, LiveKit
+- 📖 Grinding **Neetcode 150** — 2 problems/day, no days off
+- 🌐 Contributing to **FastAPI / Python ecosystem** open source
+- 🔍 **Open to remote backend engineering internships**
+
+---
+
+## ✍️ i write sometimes
+
+When I figure something out the hard way, I write it down.
+
+[![Medium](https://img.shields.io/badge/Medium-@mahimaher343-12100E?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@mahimaher343)
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,100:a78bfa&height=80&section=footer" width="100%"/>
+
+*ship it. debug it. learn from it.*
+
+</div>
