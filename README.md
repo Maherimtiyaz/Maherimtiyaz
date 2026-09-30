@@ -1,51 +1,51 @@
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--                    MAHERIMTIYAZ — README.md                    -->
-<!--          Replace all YOUR_* placeholders with your info        -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--                    MAHERIMTIYAZ — README.md                              -->
+<!--              Replace all YOUR_* placeholders with your info              -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<!-- ───────────────────────────────────────────────────────────── -->
-<!--  CINEMATIC OPENING — WINTER CODING SCENE (inline SVG)         -->
-<!-- ───────────────────────────────────────────────────────────── -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!--  HERO — CINEMATIC WINTER CODING SCENE                                     -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<svg width="100%" height="auto" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A developer coding alone during a futuristic winter night — snow falling outside a warm workstation window">
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A developer coding alone during a futuristic winter night — aurora in the sky, snow falling outside a warm workstation window, coffee steam rising, monitor glowing with code">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="60%" stop-color="#0B1020"/>
+      <stop offset="40%" stop-color="#0B1020"/>
       <stop offset="100%" stop-color="#1e1b4b"/>
     </linearGradient>
-    <linearGradient id="snowfall" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f8fafc" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#f8fafc" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0"/>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#22D3EE" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="roomGlow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.05"/>
+    <linearGradient id="aurora2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#F472B6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-    <radialGradient id="monitorLight" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+    <radialGradient id="screenLight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="coffeeSteam" cx="0.5" cy="1" r="0.5">
-      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.3"/>
+    <radialGradient id="lampLight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roomGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="steamGrad" cx="0.5" cy="1" r="0.5">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#94A3B8" stop-opacity="0"/>
     </radialGradient>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="textGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -53,254 +53,256 @@
     </filter>
   </defs>
 
-  <!-- Sky -->
-  <rect width="900" height="420" fill="url(#sky)"/>
+  <!-- SKY -->
+  <rect width="900" height="500" fill="url(#skyGrad)"/>
 
-  <!-- Distant city silhouette -->
-  <g opacity="0.18">
-    <rect x="0" y="280" width="900" height="140" fill="#020617"/>
-    <rect x="40" y="240" width="30" height="180" fill="#0B1020"/>
-    <rect x="90" y="210" width="20" height="210" fill="#0B1020"/>
-    <rect x="130" y="255" width="40" height="165" fill="#050816"/>
-    <rect x="190" y="230" width="25" height="190" fill="#0B1020"/>
-    <rect x="240" y="270" width="35" height="150" fill="#050816"/>
-    <rect x="300" y="200" width="22" height="220" fill="#0B1020"/>
-    <rect x="340" y="260" width="45" height="160" fill="#050816"/>
-    <rect x="410" y="220" width="28" height="200" fill="#0B1020"/>
-    <rect x="460" y="250" width="38" height="170" fill="#050816"/>
-    <rect x="520" y="235" width="24" height="185" fill="#0B1020"/>
-    <rect x="570" y="265" width="42" height="155" fill="#050816"/>
-    <rect x="630" y="210" width="20" height="210" fill="#0B1020"/>
-    <rect x="670" y="245" width="36" height="175" fill="#050816"/>
-    <rect x="730" y="225" width="26" height="195" fill="#0B1020"/>
-    <rect x="780" y="255" width="40" height="165" fill="#050816"/>
-    <rect x="840" y="240" width="30" height="180" fill="#0B1020"/>
-  </g>
-
-  <!-- Distant window lights -->
-  <g opacity="0.4">
-    <circle cx="55" cy="255" r="1.5" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="100" cy="230" r="1.5" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="150" cy="270" r="1" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="310" cy="220" r="1.5" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="470" cy="265" r="1" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="640" cy="225" r="1.5" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3.8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="790" cy="270" r="1" fill="#f8fafc">
-      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4.2s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Mountain silhouettes -->
-  <path d="M0 320 L80 260 L160 300 L240 240 L320 310 L400 270 L480 320 L560 250 L640 300 L720 260 L800 310 L900 280 L900 420 L0 420 Z" fill="#050816" opacity="0.6"/>
-
-  <!-- Snow particles -->
+  <!-- AURORA BOREALIS -->
   <g>
-    <circle cx="30" cy="40" r="1.5" fill="#f8fafc" opacity="0.7">
-      <animate attributeName="cy" values="40;400" dur="12s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="30;45;30" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="120" cy="80" r="1" fill="#f8fafc" opacity="0.5">
-      <animate attributeName="cy" values="80;420" dur="15s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="120;110;120" dur="10s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="230" cy="20" r="1.5" fill="#f8fafc" opacity="0.6">
-      <animate attributeName="cy" values="20;410" dur="18s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="230;245;230" dur="12s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="350" cy="60" r="1" fill="#f8fafc" opacity="0.8">
-      <animate attributeName="cy" values="60;430" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="350;335;350" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="470" cy="30" r="1.5" fill="#f8fafc" opacity="0.4">
-      <animate attributeName="cy" values="30;415" dur="16s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="470;485;470" dur="11s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="580" cy="90" r="1" fill="#f8fafc" opacity="0.6">
-      <animate attributeName="cy" values="90;425" dur="13s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="580;565;580" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="690" cy="50" r="1.5" fill="#f8fafc" opacity="0.5">
-      <animate attributeName="cy" values="50;420" dur="17s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="690;705;690" dur="13s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="810" cy="70" r="1" fill="#f8fafc" opacity="0.7">
-      <animate attributeName="cy" values="70;430" dur="15s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="810;795;810" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="870" cy="110" r="1.5" fill="#f8fafc" opacity="0.5">
-      <animate attributeName="cy" values="110;410" dur="19s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="870;885;870" dur="14s" repeatCount="indefinite"/>
-    </circle>
-    <!-- Extra slow flakes -->
-    <circle cx="60" cy="150" r="1" fill="#f8fafc" opacity="0.3">
-      <animate attributeName="cy" values="150;400" dur="22s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="200" cy="180" r="1.2" fill="#f8fafc" opacity="0.35">
-      <animate attributeName="cy" values="180;410" dur="20s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="520" cy="160" r="1" fill="#f8fafc" opacity="0.4">
-      <animate attributeName="cy" values="160;420" dur="21s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="750" cy="140" r="1.2" fill="#f8fafc" opacity="0.3">
-      <animate attributeName="cy" values="140;415" dur="23s" repeatCount="indefinite"/>
-    </circle>
+    <path fill="url(#aurora1)" opacity="0.5">
+      <animate attributeName="d" values="M0 90 Q225 50 450 80 Q675 110 900 70 L900 0 L0 0 Z;M0 75 Q225 60 450 65 Q675 95 900 80 L900 0 L0 0 Z;M0 90 Q225 50 450 80 Q675 110 900 70 L900 0 L0 0 Z" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#aurora2)" opacity="0.4">
+      <animate attributeName="d" values="M0 120 Q225 90 450 105 Q675 120 900 95 L900 0 L0 0 Z;M0 105 Q225 100 450 95 Q675 110 900 105 L900 0 L0 0 Z;M0 120 Q225 90 450 105 Q675 120 900 95 L900 0 L0 0 Z" dur="22s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.2;0.4" dur="15s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- Warm room / workstation area -->
-  <rect x="250" y="240" width="400" height="180" rx="6" fill="url(#roomGlow)" opacity="0.8"/>
-
-  <!-- Window frame -->
-  <rect x="270" y="250" width="140" height="110" rx="3" fill="none" stroke="#1e293b" stroke-width="3"/>
-  <line x1="340" y1="250" x2="340" y2="360" stroke="#1e293b" stroke-width="1.5"/>
-  <line x1="270" y1="305" x2="410" y2="305" stroke="#1e293b" stroke-width="1.5"/>
-
-  <!-- Snow visible through window -->
-  <rect x="272" y="252" width="136" height="106" fill="#0B1020" opacity="0.3"/>
-  <circle cx="300" cy="280" r="2" fill="#f8fafc" opacity="0.5">
-    <animate attributeName="cy" values="280;350" dur="8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="350" cy="290" r="1.5" fill="#f8fafc" opacity="0.4">
-    <animate attributeName="cy" values="290;355" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="380" cy="270" r="1.8" fill="#f8fafc" opacity="0.45">
-    <animate attributeName="cy" values="270;350" dur="9s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Desk -->
-  <rect x="250" y="360" width="400" height="8" rx="2" fill="#1e293b"/>
-  <rect x="270" y="368" width="8" height="40" fill="#1e293b"/>
-  <rect x="630" y="368" width="8" height="40" fill="#1e293b"/>
-
-  <!-- Monitor -->
-  <rect x="440" y="270" width="130" height="85" rx="4" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
-  <rect x="448" y="278" width="114" height="69" rx="2" fill="#020617"/>
-  <!-- Code on screen -->
-  <g filter="url(#textGlow)">
-    <text x="456" y="294" font-family="monospace" font-size="8" fill="#22D3EE" opacity="0.9">def build():</text>
-    <text x="456" y="306" font-family="monospace" font-size="8" fill="#94A3B8" opacity="0.7">  return await</text>
-    <text x="456" y="318" font-family="monospace" font-size="8" fill="#8B5CF6" opacity="0.8">  api.ship()</text>
-    <text x="456" y="330" font-family="monospace" font-size="8" fill="#38BDF8" opacity="0.6"># late night</text>
-    <text x="456" y="342" font-family="monospace" font-size="8" fill="#6366F1" opacity="0.5"># keep going</text>
+  <!-- STARS -->
+  <g fill="#f8fafc">
+    <circle cx="80" cy="40" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="25" r="0.8"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="55" r="1"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="30" r="1.2"><animate attributeName="opacity" values="0.6;0.3;0.6" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="550" cy="60" r="0.8"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="35" r="1"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="50" r="1.2"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="80" r="0.6"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="85" r="0.6"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="5.5s" repeatCount="indefinite"/></circle>
+    <circle cx="870" cy="25" r="1"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
   </g>
-  <!-- Screen glow pulse -->
-  <rect x="448" y="278" width="114" height="69" rx="2" fill="#22D3EE" opacity="0">
-    <animate attributeName="opacity" values="0;0.08;0" dur="3s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Monitor light on desk -->
-  <ellipse cx="505" cy="360" rx="80" ry="15" fill="url(#monitorLight)" opacity="0.5"/>
 
-  <!-- Monitor stand -->
-  <rect x="498" y="355" width="14" height="5" fill="#1e293b"/>
-  <rect x="490" y="358" width="30" height="3" rx="1" fill="#1e293b"/>
+  <!-- SHOOTING STAR -->
+  <g opacity="0">
+    <line x1="0" y1="0" x2="60" y2="30" stroke="#f8fafc" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="60" y2="30" stroke="#22D3EE" stroke-width="4" stroke-linecap="round" opacity="0.5" filter="url(#glow)"/>
+    <animate attributeName="opacity" values="0;0;0;1;1;0;0" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="100 20;400 160" dur="12s" repeatCount="indefinite"/>
+  </g>
 
-  <!-- Developer character (silhouette) -->
+  <!-- MOUNTAINS -->
+  <path d="M0 360 L80 300 L160 340 L240 280 L320 350 L400 310 L480 360 L560 290 L640 350 L720 300 L800 340 L900 310 L900 500 L0 500 Z" fill="#050816" opacity="0.7"/>
+  <path d="M0 400 L120 340 L240 390 L360 330 L480 400 L600 350 L720 400 L840 350 L900 380 L900 500 L0 500 Z" fill="#020617" opacity="0.9"/>
+
+  <!-- CITY SILHOUETTE -->
+  <g fill="#0B1020" opacity="0.4">
+    <rect x="30" y="320" width="25" height="180"/>
+    <rect x="65" y="300" width="18" height="200"/>
+    <rect x="95" y="340" width="30" height="160"/>
+    <rect x="140" y="310" width="22" height="190"/>
+    <rect x="175" y="290" width="28" height="210"/>
+    <rect x="215" y="330" width="20" height="170"/>
+    <rect x="250" y="305" width="35" height="195"/>
+    <rect x="300" y="320" width="18" height="180"/>
+    <rect x="330" y="295" width="25" height="205"/>
+    <rect x="370" y="335" width="30" height="165"/>
+    <rect x="415" y="310" width="22" height="190"/>
+    <rect x="450" y="290" width="28" height="210"/>
+    <rect x="490" y="325" width="20" height="175"/>
+    <rect x="525" y="300" width="35" height="200"/>
+    <rect x="575" y="315" width="18" height="185"/>
+    <rect x="605" y="295" width="25" height="205"/>
+    <rect x="645" y="330" width="30" height="170"/>
+    <rect x="690" y="310" width="22" height="190"/>
+    <rect x="725" y="290" width="28" height="210"/>
+    <rect x="765" y="325" width="20" height="175"/>
+    <rect x="800" y="305" width="35" height="195"/>
+    <rect x="850" y="320" width="18" height="180"/>
+  </g>
+
+  <!-- CITY WINDOWS -->
+  <g fill="#f8fafc">
+    <rect x="35" y="330" width="3" height="4" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="45" y="345" width="3" height="4" opacity="0.4"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite"/></rect>
+    <rect x="100" y="350" width="3" height="4" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="5s" repeatCount="indefinite"/></rect>
+    <rect x="145" y="320" width="3" height="4" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="4.2s" repeatCount="indefinite"/></rect>
+    <rect x="185" y="310" width="3" height="4" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.8s" repeatCount="indefinite"/></rect>
+    <rect x="260" y="320" width="3" height="4" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.5s" repeatCount="indefinite"/></rect>
+    <rect x="340" y="310" width="3" height="4" opacity="0.4"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="425" y="325" width="3" height="4" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="5.5s" repeatCount="indefinite"/></rect>
+    <rect x="460" y="305" width="3" height="4" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="535" y="315" width="3" height="4" opacity="0.6"><animate attributeName="opacity" values="0.6;0.3;0.6" dur="3.6s" repeatCount="indefinite"/></rect>
+    <rect x="615" y="310" width="3" height="4" opacity="0.4"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="4.8s" repeatCount="indefinite"/></rect>
+    <rect x="700" y="320" width="3" height="4" opacity="0.8"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.4s" repeatCount="indefinite"/></rect>
+    <rect x="735" y="305" width="3" height="4" opacity="0.5"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="5.2s" repeatCount="indefinite"/></rect>
+    <rect x="810" y="320" width="3" height="4" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.9s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- SNOW LAYER 1 (far, slow) -->
+  <g fill="#f8fafc" opacity="0.3">
+    <circle cx="40" cy="20" r="0.8"><animate attributeName="cy" values="20;500" dur="22s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="60" r="0.6"><animate attributeName="cy" values="60;500" dur="25s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="30" r="0.8"><animate attributeName="cy" values="30;500" dur="20s" repeatCount="indefinite"/></circle>
+    <circle cx="360" cy="80" r="0.6"><animate attributeName="cy" values="80;500" dur="24s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="40" r="0.8"><animate attributeName="cy" values="40;500" dur="23s" repeatCount="indefinite"/></circle>
+    <circle cx="590" cy="70" r="0.6"><animate attributeName="cy" values="70;500" dur="26s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="25" r="0.8"><animate attributeName="cy" values="25;500" dur="21s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="55" r="0.6"><animate attributeName="cy" values="55;500" dur="24s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- SNOW LAYER 2 (mid, medium) -->
+  <g fill="#f8fafc" opacity="0.5">
+    <circle cx="80" cy="10" r="1.2"><animate attributeName="cy" values="10;500" dur="16s" repeatCount="indefinite"/><animate attributeName="cx" values="80;90;80" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="50" r="1"><animate attributeName="cy" values="50;500" dur="18s" repeatCount="indefinite"/><animate attributeName="cx" values="200;190;200" dur="12s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="20" r="1.2"><animate attributeName="cy" values="20;500" dur="15s" repeatCount="indefinite"/><animate attributeName="cx" values="320;330;320" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="440" cy="70" r="1"><animate attributeName="cy" values="70;500" dur="17s" repeatCount="indefinite"/><animate attributeName="cx" values="440;430;440" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="35" r="1.2"><animate attributeName="cy" values="35;500" dur="19s" repeatCount="indefinite"/><animate attributeName="cx" values="560;570;560" dur="13s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="60" r="1"><animate attributeName="cy" values="60;500" dur="16s" repeatCount="indefinite"/><animate attributeName="cx" values="680;670;680" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="800" cy="15" r="1.2"><animate attributeName="cy" values="15;500" dur="18s" repeatCount="indefinite"/><animate attributeName="cx" values="800;810;800" dur="12s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="45" r="1"><animate attributeName="cy" values="45;500" dur="20s" repeatCount="indefinite"/><animate attributeName="cx" values="860;850;860" dur="14s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- SNOW LAYER 3 (near, fast, large) -->
+  <g fill="#f8fafc" opacity="0.7">
+    <circle cx="120" cy="30" r="1.8"><animate attributeName="cy" values="30;500" dur="11s" repeatCount="indefinite"/><animate attributeName="cx" values="120;130;120" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="80" r="1.5"><animate attributeName="cy" values="80;500" dur="13s" repeatCount="indefinite"/><animate attributeName="cx" values="280;270;280" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="10" r="1.8"><animate attributeName="cy" values="10;500" dur="10s" repeatCount="indefinite"/><animate attributeName="cx" values="420;430;420" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="580" cy="50" r="1.5"><animate attributeName="cy" values="50;500" dur="12s" repeatCount="indefinite"/><animate attributeName="cx" values="580;570;580" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="20" r="1.8"><animate attributeName="cy" values="20;500" dur="14s" repeatCount="indefinite"/><animate attributeName="cx" values="720;730;720" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="65" r="1.5"><animate attributeName="cy" values="65;500" dur="11s" repeatCount="indefinite"/><animate attributeName="cx" values="850;840;850" dur="8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ROOM GLOW -->
+  <ellipse cx="550" cy="420" rx="250" ry="100" fill="url(#roomGlow)"/>
+
+  <!-- CABIN WALL -->
+  <rect x="350" y="280" width="400" height="200" rx="8" fill="#0f172a" opacity="0.8"/>
+  <rect x="350" y="280" width="400" height="200" rx="8" fill="none" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- WINDOW -->
+  <rect x="370" y="300" width="130" height="100" rx="4" fill="#020617" stroke="#1e293b" stroke-width="3"/>
+  <line x1="435" y1="300" x2="435" y2="400" stroke="#1e293b" stroke-width="2"/>
+  <line x1="370" y1="350" x2="500" y2="350" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="390" cy="320" r="1.5" fill="#f8fafc" opacity="0.4"><animate attributeName="cy" values="320;390" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="420" cy="330" r="1" fill="#f8fafc" opacity="0.3"><animate attributeName="cy" values="330;395" dur="10s" repeatCount="indefinite"/></circle>
+  <circle cx="460" cy="315" r="1.2" fill="#f8fafc" opacity="0.35"><animate attributeName="cy" values="315;390" dur="9s" repeatCount="indefinite"/></circle>
+  <path d="M372 302 Q378 310 372 318" stroke="#94A3B8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M498 302 Q492 310 498 318" stroke="#94A3B8" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M372 398 Q378 390 372 382" stroke="#94A3B8" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- DESK -->
+  <rect x="350" y="410" width="400" height="6" rx="3" fill="#1e293b"/>
+  <rect x="370" y="416" width="8" height="50" fill="#1e293b"/>
+  <rect x="720" y="416" width="8" height="50" fill="#1e293b"/>
+
+  <!-- MONITOR -->
+  <rect x="540" y="320" width="140" height="90" rx="5" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <rect x="548" y="328" width="124" height="74" rx="3" fill="#020617"/>
+  <rect x="548" y="328" width="124" height="74" rx="3" fill="#22D3EE" opacity="0"><animate attributeName="opacity" values="0;0.06;0" dur="4s" repeatCount="indefinite"/></rect>
+  <g font-family="monospace" font-size="8" filter="url(#glow)">
+    <text x="556" y="344" fill="#22D3EE" opacity="0">def build():<animate attributeName="opacity" values="0;0;1;1;1;0;0" dur="8s" repeatCount="indefinite"/></text>
+    <text x="556" y="356" fill="#94A3B8" opacity="0">  return await<animate attributeName="opacity" values="0;0;0;1;1;1;0" dur="8s" repeatCount="indefinite"/></text>
+    <text x="556" y="368" fill="#8B5CF6" opacity="0">  api.ship()<animate attributeName="opacity" values="0;0;0;0;1;1;1" dur="8s" repeatCount="indefinite"/></text>
+    <text x="556" y="380" fill="#38BDF8" opacity="0"># late night<animate attributeName="opacity" values="0;0;0;0;0;1;1" dur="8s" repeatCount="indefinite"/></text>
+    <text x="556" y="392" fill="#6366F1" opacity="0"># keep going<animate attributeName="opacity" values="0;0;0;0;0;0;1" dur="8s" repeatCount="indefinite"/></text>
+  </g>
+  <rect x="605" y="410" width="10" height="5" fill="#1e293b"/>
+  <rect x="595" y="413" width="30" height="3" rx="1" fill="#1e293b"/>
+  <ellipse cx="610" cy="410" rx="90" ry="20" fill="url(#screenLight)" opacity="0.5"/>
+
+  <!-- CHARACTER -->
   <g>
-    <!-- Chair back -->
-    <rect x="400" y="300" width="50" height="70" rx="8" fill="#1e293b"/>
-    <!-- Body -->
-    <path d="M395 370 Q400 330 420 325 L430 325 Q445 330 450 370 Z" fill="#1e293b"/>
-    <!-- Head -->
-    <circle cx="422" cy="310" r="16" fill="#1e293b"/>
-    <!-- Hoodie hood -->
-    <path d="M406 310 Q410 294 422 292 Q434 294 438 310" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-    <!-- Face (warm monitor light) -->
-    <ellipse cx="422" cy="312" rx="7" ry="8" fill="#334155"/>
-    <!-- Eyes (subtle blink) -->
-    <ellipse cx="418" cy="310" rx="2" ry="2.5" fill="#94A3B8">
-      <animate attributeName="ry" values="2.5;0.3;2.5" dur="5s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="426" cy="310" rx="2" ry="2.5" fill="#94A3B8">
-      <animate attributeName="ry" values="2.5;0.3;2.5" dur="5s" repeatCount="indefinite"/>
-    </ellipse>
-    <!-- Arms typing -->
-    <path d="M435 340 Q450 348 455 355" stroke="#1e293b" stroke-width="6" fill="none" stroke-linecap="round">
-      <animate attributeName="d" values="M435 340 Q450 348 455 355;M435 340 Q450 350 455 357;M435 340 Q450 348 455 355" dur="0.8s" repeatCount="indefinite"/>
+    <rect x="490" y="350" width="55" height="80" rx="10" fill="#1e293b"/>
+    <path d="M485 420 Q490 380 510 375 L520 375 Q540 380 545 420 Z" fill="#1e293b"/>
+    <circle cx="515" cy="358" r="18" fill="#1e293b"/>
+    <path d="M497 358 Q502 340 515 338 Q528 340 533 358" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <path d="M498 350 Q515 335 532 350" stroke="#334155" stroke-width="3" fill="none"/>
+    <ellipse cx="498" cy="355" rx="4" ry="6" fill="#334155"/>
+    <ellipse cx="532" cy="355" rx="4" ry="6" fill="#334155"/>
+    <ellipse cx="498" cy="355" rx="4" ry="6" fill="#22D3EE" opacity="0"><animate attributeName="opacity" values="0;0.3;0" dur="3s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="532" cy="355" rx="4" ry="6" fill="#22D3EE" opacity="0"><animate attributeName="opacity" values="0;0.3;0" dur="3s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="515" cy="360" rx="8" ry="9" fill="#334155"/>
+    <ellipse cx="515" cy="360" rx="8" ry="9" fill="#22D3EE" opacity="0.1"><animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="511" cy="358" rx="2" ry="2.5" fill="#94A3B8"><animate attributeName="ry" values="2.5;0.3;2.5" dur="5s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="519" cy="358" rx="2" ry="2.5" fill="#94A3B8"><animate attributeName="ry" values="2.5;0.3;2.5" dur="5s" repeatCount="indefinite"/></ellipse>
+    <path d="M510 372 L508 385" stroke="#334155" stroke-width="1" fill="none"/>
+    <path d="M520 372 L522 385" stroke="#334155" stroke-width="1" fill="none"/>
+    <path d="M500 390 Q490 400 485 405" stroke="#1e293b" stroke-width="7" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M500 390 Q490 400 485 405;M500 390 Q488 402 483 407;M500 390 Q490 400 485 405" dur="0.9s" repeatCount="indefinite"/>
     </path>
-    <path d="M410 342 Q400 350 395 355" stroke="#1e293b" stroke-width="6" fill="none" stroke-linecap="round">
-      <animate attributeName="d" values="M410 342 Q400 350 395 355;M410 342 Q398 352 393 357;M410 342 Q400 350 395 355" dur="0.9s" repeatCount="indefinite"/>
+    <path d="M530 390 Q540 400 545 405" stroke="#1e293b" stroke-width="7" fill="none" stroke-linecap="round">
+      <animate attributeName="d" values="M530 390 Q540 400 545 405;M530 390 Q542 402 547 407;M530 390 Q540 400 545 405" dur="0.8s" repeatCount="indefinite"/>
     </path>
-    <!-- Legs -->
-    <path d="M410 370 L405 400" stroke="#1e293b" stroke-width="8" fill="none" stroke-linecap="round"/>
-    <path d="M435 370 L440 400" stroke="#1e293b" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M500 420 L495 450" stroke="#1e293b" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M530 420 L535 450" stroke="#1e293b" stroke-width="9" fill="none" stroke-linecap="round"/>
   </g>
 
-  <!-- Coffee mug -->
-  <rect x="585" y="345" width="18" height="18" rx="2" fill="#1e293b"/>
-  <rect x="585" y="345" width="18" height="18" rx="2" fill="#0f172a" opacity="0.5"/>
-  <path d="M603 350 Q610 350 610 355 Q610 360 603 360" stroke="#1e293b" stroke-width="2" fill="none"/>
-  <!-- Coffee steam -->
-  <ellipse cx="594" cy="340" rx="6" ry="8" fill="url(#coffeeSteam)">
-    <animate attributeName="cy" values="340;325;340" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0;0.3" dur="6s" repeatCount="indefinite"/>
-  </ellipse>
+  <!-- KEYBOARD -->
+  <rect x="520" y="405" width="60" height="6" rx="2" fill="#0f172a"/>
+  <rect x="525" y="406" width="50" height="1" fill="#22D3EE" opacity="0.3"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/></rect>
 
-  <!-- Ambient particles -->
-  <circle cx="500" cy="240" r="1" fill="#6366F1" opacity="0.4">
-    <animate attributeName="cy" values="240;220;240" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.4;0;0.4" dur="7s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="550" cy="250" r="1.2" fill="#8B5CF6" opacity="0.3">
-    <animate attributeName="cy" values="250;230;250" dur="9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="460" cy="245" r="0.8" fill="#22D3EE" opacity="0.5">
-    <animate attributeName="cy" values="245;225;245" dur="8s" repeatCount="indefinite"/>
-  </circle>
+  <!-- COFFEE MUG -->
+  <rect x="680" y="395" width="20" height="18" rx="3" fill="#1e293b"/>
+  <rect x="680" y="395" width="20" height="18" rx="3" fill="#0f172a" opacity="0.5"/>
+  <path d="M700 400 Q708 400 708 405 Q708 410 700 410" stroke="#1e293b" stroke-width="2.5" fill="none"/>
+  <ellipse cx="690" cy="388" rx="7" ry="10" fill="url(#steamGrad)"><animate attributeName="cy" values="388;370;388" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="7s" repeatCount="indefinite"/></ellipse>
+  <ellipse cx="695" cy="385" rx="5" ry="8" fill="url(#steamGrad)"><animate attributeName="cy" values="385;365;385" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;0;0.3" dur="9s" repeatCount="indefinite"/></ellipse>
 
-  <!-- Frost on window edges -->
-  <path d="M272 252 Q275 260 272 268" stroke="#94A3B8" stroke-width="1" fill="none" opacity="0.3"/>
-  <path d="M408 252 Q405 260 408 268" stroke="#94A3B8" stroke-width="1" fill="none" opacity="0.3"/>
-  <path d="M272 360 Q275 352 272 344" stroke="#94A3B8" stroke-width="1" fill="none" opacity="0.3"/>
+  <!-- DESK LAMP -->
+  <rect x="730" y="390" width="6" height="25" fill="#1e293b"/>
+  <path d="M733 390 Q745 375 755 380 L760 385 L745 395 Z" fill="#1e293b"/>
+  <circle cx="755" cy="382" r="4" fill="#F472B6" opacity="0.8"><animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="755" cy="382" r="15" fill="url(#lampLight)" opacity="0.5"/>
+
+  <!-- AMBIENT PARTICLES -->
+  <g>
+    <circle cx="580" cy="300" r="1" fill="#6366F1" opacity="0.5"><animate attributeName="cy" values="300;280;300" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="650" cy="310" r="1.2" fill="#8B5CF6" opacity="0.4"><animate attributeName="cy" values="310;290;310" dur="10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="530" cy="295" r="0.8" fill="#22D3EE" opacity="0.6"><animate attributeName="cy" values="295;275;295" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;0;0.6" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="305" r="1" fill="#F472B6" opacity="0.3"><animate attributeName="cy" values="305;285;305" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;0;0.3" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="290" r="0.8" fill="#38BDF8" opacity="0.5"><animate attributeName="cy" values="290;270;290" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="7s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- CINEMATIC BARS -->
+  <rect x="0" y="0" width="900" height="30" fill="#020617" opacity="0.6"/>
+  <rect x="0" y="470" width="900" height="30" fill="#020617" opacity="0.6"/>
 </svg>
 
 <br/>
 
-<!-- ───────────────────────────────────────────────────────────── -->
-<!--  NAME + TITLE                                                   -->
-<!-- ───────────────────────────────────────────────────────────── -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!--  IDENTITY                                                                -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
 
-# MAHEK FATIMA
+# YOUR_NAME
 ### `BACKEND ENGINEER` · `PYTHON` · `FASTAPI` · `POSTGRESQL`
 
 <br/>
 
-<!-- ───────────────────────────────────────────────────────────── -->
-<!--  TYPING TAGLINE                                                 -->
-<!-- ───────────────────────────────────────────────────────────── -->
-
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3500&pause=1200&color=6366F1&center=true&vCenter=true&width=520&lines=Building+scalable+APIs+%26+real-time+systems;Open+to+remote+backend+internships;Python+%7C+FastAPI+%7C+PostgreSQL+%7C+Docker" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3500&pause=1200&color=6366F1&center=true&vCenter=true&width=560&lines=Building+scalable+APIs+%26+real-time+systems;Multi-tenant+architecture+%7C+Auth+flows;AI+backends+%7C+RAG+pipelines+%7C+Voice+AI;Open+to+remote+backend+internships" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-<!-- ───────────────────────────────────────────────────────────── -->
-<!--  STATUS + LOCATION                                              -->
-<!-- ───────────────────────────────────────────────────────────── -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!--  STATUS HUD                                                               -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<p>
-  <code>◉ OPEN TO OPPORTUNITIES</code> &nbsp;&nbsp;·&nbsp;&nbsp;
-  <code>📍 Jaipur, India</code>
-</p>
+<table>
+  <tr>
+    <td align="center"><code>◉ ONLINE</code></td>
+    <td align="center"><code>⬢ BUILDING</code></td>
+    <td align="center"><code>◆ OPEN TO WORK</code></td>
+    <td align="center"><code>📍 JAIPUR, INDIA</code></td>
+  </tr>
+</table>
 
 <br/>
 
-<!-- ───────────────────────────────────────────────────────────── -->
-<!--  HERO BUTTONS                                                   -->
-<!-- ───────────────────────────────────────────────────────────── -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
+<!--  HERO BUTTONS                                                             -->
+<!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <a href="https://github.com/Maherimtiyaz">
   <img src="https://img.shields.io/badge/GitHub-Maherimtiyaz-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1020" alt="GitHub" />
@@ -322,9 +324,28 @@
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  ABOUT                                                          -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  DIVIDER                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+  <svg width="300" height="2" viewBox="0 0 300 2" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="div1" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#6366F1" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#6366F1" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="2" rx="1" fill="url(#div1)"/>
+  </svg>
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 01 ] — ABOUT                                                           -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
 ## `[ 01 ]` — ABOUT
 
@@ -335,10 +356,304 @@
 > **What differentiates my approach:** I ship with CI/CD from day one, write tests before features, and treat infrastructure as part of the product — not an afterthought.
 
 ```yaml
-YOUR_NAME:        "Mahek Fatima"
-YOUR_USERNAME:    "Maherimtiyaz"
-YOUR_LOCATION:    "Jaipur, India"
-YOUR_ROLE:        "Backend Engineer"
-YOUR_BIO:         "Building scalable APIs & real-time systems"
-YOUR_CURRENT_FOCUS: "LLM backends · voice AI · multi-tenant architecture"
-OPEN_TO:          "Remote backend engineering internships"
+YOUR_NAME:           "YOUR_NAME"
+YOUR_USERNAME:       "Maherimtiyaz"
+YOUR_LOCATION:       "Jaipur, India"
+YOUR_ROLE:           "Backend Engineer"
+YOUR_BIO:            "Building scalable APIs & real-time systems"
+YOUR_CURRENT_FOCUS:  "LLM backends · voice AI · multi-tenant architecture"
+OPEN_TO:             "Remote backend engineering internships"
+```
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 02 ] — WHAT I BUILD                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+## `[ 02 ]` — WHAT I BUILD
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ API ARCHITECTURE</h3>
+      <p>Production-grade REST APIs with proper layering, migrations, and CI pipelines.</p>
+      <code>FastAPI · PostgreSQL · Alembic · Docker</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔐 AUTH SYSTEMS</h3>
+      <p>Stateless JWT auth with bcrypt, RBAC, and OWASP-aligned validation.</p>
+      <code>JWT · bcrypt · RBAC · pytest</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 REAL-TIME BACKENDS</h3>
+      <p>WebSocket servers with multi-room support, JWT handshakes, and indexed queries.</p>
+      <code>WebSockets · FastAPI · PostgreSQL</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧠 AI BACKENDS</h3>
+      <p>RAG pipelines, streaming LLM responses, prompt routing, and session state.</p>
+      <code>FAISS · Celery · Redis · OpenAI</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🏗️ MULTI-TENANT SYSTEMS</h3>
+      <p>Org-isolated data, role-based access, conflict detection at the DB layer.</p>
+      <code>PostgreSQL · FastAPI · Docker</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📦 PRODUCT ENGINEERING</h3>
+      <p>From schema design to deployment — full ownership of the backend surface.</p>
+      <code>Docker · GitHub Actions · Render</code>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  DIVIDER                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+  <svg width="300" height="2" viewBox="0 0 300 2" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="div2" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="2" rx="1" fill="url(#div2)"/>
+  </svg>
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 03 ] — TECH LOADOUT                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+## `[ 03 ]` — TECH LOADOUT
+
+<div align="center">
+
+### LANGUAGES
+<img src="https://skillicons.dev/icons?i=python,ts,js,bash&theme=dark" height="48" />
+
+### BACKEND
+<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,postgres,mongodb,redis&theme=dark" height="48" />
+
+### AI / ML
+<img src="https://skillicons.dev/icons?i=openai,py,tensorflow&theme=dark" height="48" />
+&nbsp;
+<img src="https://img.shields.io/badge/LLMs-6366F1?style=flat-square&logo=openai&logoColor=white&labelColor=0B1020" />
+<img src="https://img.shields.io/badge/RAG-8B5CF6?style=flat-square&logo=langchain&logoColor=white&labelColor=0B1020" />
+<img src="https://img.shields.io/badge/FAISS-22D3EE?style=flat-square&logo=meta&logoColor=white&labelColor=0B1020" />
+<img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white&labelColor=0B1020" />
+
+### INFRASTRUCTURE
+<img src="https://skillicons.dev/icons?i=docker,githubactions,linux,nginx&theme=dark" height="48" />
+
+### TOOLS
+<img src="https://skillicons.dev/icons?i=git,vscode,postman,figma&theme=dark" height="48" />
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  DIVIDER                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+  <svg width="300" height="2" viewBox="0 0 300 2" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="div3" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="2" rx="1" fill="url(#div3)"/>
+  </svg>
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 04 ] — SHIPPED PROJECTS                                                -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+## `[ 04 ]` — SHIPPED PROJECTS
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 AI_Powered_Doc_API</h3>
+      <p><b>Production-grade AI document platform.</b><br/>
+      PDF uploads → semantic retrieval → conversational Q&A. Deployed on Render — real infra debugging included.</p>
+      <p><code>Python · FastAPI · RAG · FAISS · Celery · Redis · Docker</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_LIVE-22D3EE?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/AI_Powered_Doc_API">GitHub →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📋 Task-Manager-API</h3>
+      <p><b>Flagship backend engineering project.</b><br/>
+      Multi-tenant REST API with isolated org data, role-based access, and Alembic migrations. CI runs pytest on every push.</p>
+      <p><code>Python · FastAPI · PostgreSQL · JWT · RBAC · Docker · GitHub Actions</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_OPEN_SOURCE-8B5CF6?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/Task-Manager-API">GitHub →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>💬 Chat_Backend</h3>
+      <p><b>Real-time messaging backend.</b><br/>
+      WebSocket support with multi-room concurrent connections, JWT handshakes, and PostgreSQL persistence. Indexed FK queries — no sequential scans.</p>
+      <p><code>Python · FastAPI · WebSockets · PostgreSQL · Docker</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_LIVE-22D3EE?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/Chat_Backend">GitHub →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔐 Auth-service</h3>
+      <p><b>Pluggable JWT auth module.</b><br/>
+      Stateless authentication with bcrypt + RBAC. OWASP-aligned input validation. Designed as a pluggable module for microservice stacks.</p>
+      <p><code>Python · FastAPI · JWT · bcrypt · pytest</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_OPEN_SOURCE-8B5CF6?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/Auth-service">GitHub →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 AI_ChatBot_Backend_API</h3>
+      <p><b>LLM integration layer.</b><br/>
+      Prompt routing, streaming responses, multi-turn conversation state. Prompt templates for hallucination reduction.</p>
+      <p><code>Python · FastAPI · OpenAI · Anthropic</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_EXPERIMENTAL-F472B6?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/AI_ChatBot_Backend_API">GitHub →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📅 College-appointment-system-API</h3>
+      <p><b>Role-based scheduling API.</b><br/>
+      REST API with conflict-detection logic at the database layer. Built with Node.js/Express alongside Python/FastAPI breadth.</p>
+      <p><code>Node.js · Express · MongoDB · RBAC</code></p>
+      <p>
+        <img src="https://img.shields.io/badge/●_OPEN_SOURCE-8B5CF6?style=flat-square&labelColor=0B1020" />
+      </p>
+      <a href="https://github.com/Maherimtiyaz/College-appointment-system-API">GitHub →</a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  DIVIDER                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+  <svg width="300" height="2" viewBox="0 0 300 2" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="div4" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#F472B6" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#F472B6" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="2" rx="1" fill="url(#div4)"/>
+  </svg>
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 05 ] — SYSTEM HUD                                                      -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+## `[ 05 ]` — SYSTEM HUD
+
+<div align="center">
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=Maherimtiyaz&show_icons=true&theme=transparent&bg_color=0B1020&title_color=6366F1&icon_color=8B5CF6&text_color=94A3B8&border_color=1e293b&hide_border=true&rank_icon=github" alt="GitHub Stats" height="165" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Maherimtiyaz&layout=compact&theme=transparent&bg_color=0B1020&title_color=6366F1&text_color=94A3B8&border_color=1e293b&hide_border=true" alt="Top Languages" height="165" />
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=Maherimtiyaz&theme=transparent&background=0B1020&ring=6366F1&fire=8B5CF6&currStreakLabel=94A3B8&sideLabels=94A3B8&dates=64748B&border=1e293b&hide_border=true" alt="GitHub Streak" width="520" />
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Maherimtiyaz&bg_color=0B1020&color=94A3B8&line=6366F1&point=8B5CF6&area=true&area_color=6366F1&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Activity Graph" width="900" />
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=Maherimtiyaz&color=6366F1&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  DIVIDER                                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+  <svg width="300" height="2" viewBox="0 0 300 2" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="div5" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="2" rx="1" fill="url(#div5)"/>
+  </svg>
+</div>
+
+<br/>
+
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--  [ 06 ] — CURRENT QUEST                                                   -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+## `[ 06 ]` — CURRENT QUEST
+
+<div align="center">
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║  PLAYER PROFILE                                                      ║
+╠══════════════════════════════════════════════════════════════════════╣
+║                                                                      ║
+║  CLASS              BACKEND ENGINEER                                 ║
+║  PRIMARY WEAPON     SYSTEM DESIGN                                    ║
+║  SPECIAL ABILITY    TURNING COMPLEXITY INTO APIs                     ║
+║  CURRENT QUEST      VOICE AI + MULTI-TENANT ARCHITECTURE             ║
+║                                                                      ║
+║  [██████████████████░░░░░░░░░░░░░░░░░]  45%                          ║
+║                                                                      ║
+║  LEARN → BUILD → BREAK → DEBUG → SHIP                                ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
