@@ -10,10 +10,6 @@
 
 </div>
 
----
-
----
-
 ## // identity
 
 I'm a backend engineer who writes systems from scratch and ships them to production.
@@ -28,16 +24,12 @@ building systems where agents, voice, and LLMs need serious engineering behind t
 > 🏎️ I think about backend performance the way an F1 team thinks about lap telemetry.  
 > 🎮 I treat systems design like a game where the boss is production traffic.
 
----
-
 ## // what I build
 
 Two tracks. Both serious.
 
 **[ INFRASTRUCTURE TRACK ]** — APIs, auth, real-time systems, databases  
 **[ PRODUCT TRACK ]** — AI agents, voice systems, productivity tools
-
----
 
 ## // infrastructure track
 
@@ -50,8 +42,6 @@ Two tracks. Both serious.
 | [**Real-Time Chat Backend**](https://github.com/Maherimtiyaz/Chat_Backend) | Async WebSocket backend, multi-room concurrent connections, indexed queries | `FastAPI` `WebSockets` `PostgreSQL` |
 | [**Auth & Authorization Service**](https://github.com/Maherimtiyaz/Auth-service) | Stateless JWT auth with bcrypt + RBAC — pluggable microservice module | `FastAPI` `JWT` `bcrypt` `OWASP` `pytest` |
 | [**AI Chatbot Backend**](https://github.com/Maherimtiyaz/AI_ChatBot_Backend_API) | LLM API integration — prompt routing, streaming, multi-turn state | `FastAPI` `OpenAI` `Anthropic` |
-
----
 
 ## // product track
 
@@ -72,10 +62,6 @@ Engineering storytelling platform — turns real commits, PRs, and architecture 
 **[content-agent](https://github.com/Maherimtiyaz/content-agent)**  
 `Python` `Modular monolith` `AI`  
 AI personal brand engineer — ingests real engineering work and generates high-quality technical content for X. Studies patterns from top engineers (Karpathy, swyx, hwchase17).
-
----
-
----
 
 ## // currently
 
@@ -106,8 +92,6 @@ status = {
 
 </div>
 
----
-
 ## // contact
 
 <div align="center">
@@ -118,8 +102,6 @@ status = {
 [![Email](https://img.shields.io/badge/Email-mahekimtiyaz7@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mahekimtiyaz7@gmail.com)
 
 </div>
-
----
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:302b63,60:0f0c29,100:0d1117&height=100&section=footer" width="100%"/>
