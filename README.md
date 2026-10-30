@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="assets/header.svg" alt="A terminal in a snowy night scene. Five F1 start lights go out, then it prints a JSON profile: Mahek Fatima, backend engineer, based in Jaipur, open to remote internships." width="100%"/>
+  <img src="assets/header.svg" alt="A terminal in a snowy night scene. Five F1 start lights go out, then it prints a JSON profile: Mahek Fatima, backend engineer, based in India, open to opportunities." width="100%"/>
 </div>
 
 <div align="center">
